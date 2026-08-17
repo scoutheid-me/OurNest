@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "Household": {
+      "title": "Household Ledger State",
+      "description": "Stores the settings and all entries for a household",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "description": "UID of the creator"
+        },
+        "appDataJson": {
+          "type": "string",
+          "description": "Stringified JSON of the entire app state",
+          "maxLength": 800000
+        }
+      },
+      "required": ["ownerId", "appDataJson"]
+    }
+  },
+  "firestore": {
+    "households/{householdId}": {
+      "schema": { "$ref": "#/entities/Household" },
+      "description": "User households"
+    }
+  }
+}

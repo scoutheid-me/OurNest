@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+  </defs>
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#nestGrad)" />
+  
+  <!-- Nest / House Silhouette -->
+  <!-- Roof -->
+  <path d="M256 120 L110 248 C104 253 104 263 111 268 C118 274 128 273 133 267 L256 160 L379 267 C384 273 394 274 401 268 C408 263 408 253 402 248 Z" fill="url(#roofGrad)" />
+  
+  <!-- House Body with Heart Window / Arch -->
+  <path d="M148 260 L148 376 C148 392 161 405 177 405 L335 405 C351 405 364 392 364 376 L364 260 L256 165 Z" fill="#ffffff" fill-opacity="0.95" />
+  
+  <!-- Heart-shaped Nest Core representing Shared Life & Finances -->
+  <path d="M256 265 C244 245 220 240 202 254 C182 270 180 298 198 322 L256 372 L314 322 C332 298 330 270 310 254 C292 240 268 245 256 265 Z" fill="#059669" />
+</svg>
